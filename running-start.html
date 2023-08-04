@@ -9,14 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-
-
+    <script src="components/image_popup.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body class="eggshell">
     <header-component></header-component>
 
-
+    <div class="modal">
+        <div class="modal-content">
+            <img id="modal-img" src="images/runningstart/userinsights.png"/>
+            <!-- <span class="close"><img src="images/Multiply.png"/></span> -->
+        </div>
+    </div>
     <section class="cs-section">
         <h2 class="salmonText">running-start.org</h2>
         <div class="description">
@@ -88,7 +93,7 @@
     <section>
         <div class="card greyblue">
             <div class="cardimgdiv">
-            <img src="images/runningstart/userinsights.png"/>
+            <img id="insights" src="images/runningstart/userinsights.png"/>
             </div>
             <div class="cardtextdiv">
                 <h3 class="brickText">User Interviews & Insights</h3>
